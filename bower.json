@@ -1,0 +1,21 @@
+{
+  "name": "plusator",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mesdt/plusator",
+  "description": "Пример Two Way Binding",
+  "main": "index.html",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.3.0"
+  }
+}

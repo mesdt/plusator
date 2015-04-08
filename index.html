@@ -15,10 +15,13 @@
         <div class="col-xs-12">
             <form action="javascript:void('_ + % = ?')" class="form-inline">
                 <input data-bind="textInput: x" class="form-control">
-                +
-                <input data-bind="textInput: perc" class="form-control" autofocus>%
-                =
-                <span data-bind="text: answer">?</span>
+                <span class="glyphicon glyphicon-plus"></span>
+                <div class="input-group">
+                    <input data-bind="textInput: perc" class="form-control" autofocus>
+                    <div class="input-group-addon">%</div>
+                </div>
+                <span class="glyphicon glyphicon-hand-right"></span>
+                <code data-bind="text: answer">?</code>
             </form>
         </div>
     </div>

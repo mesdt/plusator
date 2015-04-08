@@ -6,7 +6,11 @@
 </head>
 <body>
 <form action="javascript:void('x + % = ?')">
-    <input data-bind="textInput: x"> + <input data-bind="textInput: perc">% = <span>?</span>
+    <input data-bind="textInput: x">
+    +
+    <input data-bind="textInput: perc">%
+    =
+    <span data-bind="text: answer">?</span>
 </form>
 
 <script src="bower_components/knockout/dist/knockout.js"></script>

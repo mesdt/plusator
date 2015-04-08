@@ -10,6 +10,6 @@
 
 Читать:
 [Bower](bower.io),
-[RequireJS](requirejs.org),
-[Knockout](knockoutjs.com),
-[CoffeeScript](coffeescript.org)
+[RequireJS](http://requirejs.org),
+[Knockout](http://knockoutjs.com),
+[CoffeeScript](http://coffeescript.org)

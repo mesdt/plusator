@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Плюсатор</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-<form action="javascript:void('x + % = ?')">
-    <input data-bind="textInput: x">
-    +
-    <input data-bind="textInput: perc">%
-    =
-    <span data-bind="text: answer">?</span>
-</form>
+
+<div class="container">
+
+    <h1>Плюсатор</h1>
+
+    <div class="row">
+        <div class="col-xs-12">
+            <form action="javascript:void('_ + % = ?')" class="form-inline">
+                <input data-bind="textInput: x" class="form-control">
+                +
+                <input data-bind="textInput: perc" class="form-control" autofocus>%
+                =
+                <span data-bind="text: answer">?</span>
+            </form>
+        </div>
+    </div>
+
+</div>
 
 <script src="bower_components/knockout/dist/knockout.js"></script>
 <script src="src/Plusator.js"></script>

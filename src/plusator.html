@@ -1,0 +1,15 @@
+<h1>Плюсатор</h1>
+<div class="row">
+    <div class="col-xs-12">
+        <form action="javascript:void('_ + % = ?')" class="form-inline">
+            <input data-bind="textInput: x" class="form-control">
+            <span class="glyphicon glyphicon-plus"></span>
+            <div class="input-group">
+                <input data-bind="textInput: perc" class="form-control" autofocus>
+                <div class="input-group-addon">%</div>
+            </div>
+            <span class="badge">=</span>
+            <code data-bind="text: answer">?</code>
+        </form>
+    </div>
+</div>

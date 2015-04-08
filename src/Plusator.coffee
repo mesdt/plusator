@@ -4,9 +4,9 @@ define ['knockout'], (ko)->
   ###
   class Plusator
 
-    constructor: (x, perc)->
-      @x = ko.observable x
-      @perc = ko.observable perc
+    constructor: (params)->
+      @x = ko.observable params.x
+      @perc = ko.observable params.perc
       @answer = ko.computed @do
 
     do: =>

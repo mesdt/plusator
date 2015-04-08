@@ -1,9 +1,10 @@
 requirejs.config({
     waitSeconds: 15,
     paths: {
+        text: '../bower_components/text/text',
+        cs: '../bower_components/require-cs/cs',
         knockout: '../bower_components/knockout/dist/knockout',
         'coffee-script': '../bower_components/coffeescript/extras/coffee-script',
-        cs: '../bower_components/require-cs/cs',
         'twbs-less': '../bower_components/bootstrap/less/bootstrap',
         'twbs-css': '../bower_components/bootstrap/dist/css/bootstrap.min'
     },
@@ -15,6 +16,10 @@ requirejs.config({
     }
 });
 
-require(['knockout', 'cs!Plusator', 1/*0*/ ? 'css!twbs-css' : 'less!twbs-less'], function (ko, Plusator) {
-    ko.applyBindings(new Plusator(50, 2));
+require(['knockout', 1/*0*/ ? 'css!twbs-css' : 'less!twbs-less'], function (ko) {
+    ko.components.register('plusator', {
+        viewModel: {require: 'cs!Plusator'},
+        template: {require: 'text!plusator.html'}
+    });
+    ko.applyBindings();
 });

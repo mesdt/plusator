@@ -5,29 +5,7 @@
     <title>Плюсатор</title>
 </head>
 <body>
-
-<div class="container">
-
-    <h1>Плюсатор</h1>
-
-    <div class="row">
-        <div class="col-xs-12">
-            <form action="javascript:void('_ + % = ?')" class="form-inline">
-                <input data-bind="textInput: x" class="form-control">
-                <span class="glyphicon glyphicon-plus"></span>
-                <div class="input-group">
-                    <input data-bind="textInput: perc" class="form-control" autofocus>
-                    <div class="input-group-addon">%</div>
-                </div>
-                <span class="badge">=</span>
-                <code data-bind="text: answer">?</code>
-            </form>
-        </div>
-    </div>
-
-</div>
-
+<div class="container" data-bind="component: {name: 'plusator', params: {x: 50, perc: 2}}"></div>
 <script src="bower_components/requirejs/require.js" data-main="src/plusator_app"></script>
-
 </body>
 </html>

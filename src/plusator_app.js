@@ -5,5 +5,5 @@ requirejs.config({
 });
 
 require(['knockout', 'Plusator'], function (ko, Plusator) {
-    ko.applyBindings(new Plusator());
+    ko.applyBindings(new Plusator(50, 2));
 });

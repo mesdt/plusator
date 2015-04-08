@@ -9,7 +9,7 @@
 `xdg-open index.html`
 
 Читать:
-[Bower](bower.io),
+[Bower](http://bower.io),
 [RequireJS](http://requirejs.org),
 [Knockout](http://knockoutjs.com),
 [CoffeeScript](http://coffeescript.org)

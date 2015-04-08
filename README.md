@@ -8,4 +8,8 @@
 
 `xdg-open index.html`
 
-Почитать: http://bower.io/, http://requirejs.org/, http://knockoutjs.com/, http://coffeescript.org/
+Читать:
+[Bower](bower.io),
+[RequireJS](requirejs.org),
+[Knockout](knockoutjs.com),
+[CoffeeScript](coffeescript.org)
